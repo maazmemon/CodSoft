@@ -3,79 +3,139 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to Our Website</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="assets/logo.png" />
+    <title>MR Bike Point</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div id="branding">
-          <h1><span class="highlight">Acme</span> Web Design</h1>
-        </div>
+    <div class="content-wrapper">
+      <header>
         <nav>
-          <ul>
-            <li class="current"><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-          </ul>
+          <div class="logo">MR Bike Point</div>
+          <div class="menu-container">
+            <div class="menu-icon">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+            <ul class="nav-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#bikes">Bikes</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
         </nav>
-      </div>
-    </header>
+      </header>
 
-    <section id="showcase">
-      <div class="container">
-        <h1>Affordable Professional Web Design</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-          luctus ipsum, rhoncus semper magna. Nulla nec magna sit amet sem
-          interdum condimentum.
-        </p>
-        <button>Learn More</button>
-      </div>
-    </section>
+      <main>
+        <section id="home" class="hero">
+          <img src="assets/logo.png" alt="Random Bike" class="pulsing-logo" />
+          <h1>Welcome to <strong>MR Bike Point</strong></h1>
+          <p>Your one-stop destination for premium second-hand bikes</p>
+          <a href="#bikes" class="cta-button">Explore Bikes</a>
+        </section>
 
-    <section id="image-gallery">
-      <div class="container">
-        <h2>Our Gallery</h2>
-        <div class="image-container">
-          <div class="image-item">
-            <img
-              src="https://picsum.photos/300/200?random=1"
-              alt="Random Image 1"
-            />
+        <section id="about" class="about">
+          <h2>Why Choose MR Bike Point?</h2>
+          <div class="features">
+            <div class="feature">
+              <img src="assets/icon-collection.png" alt="Collection Icon" />
+              <h3>Extensive Collection</h3>
+              <p>Top-notch second-hand bikes from renowned manufacturers</p>
+            </div>
+            <div class="feature">
+              <img src="assets/icon-service.png" alt="Service Icon" />
+              <h3>Transparent Service</h3>
+              <p>100% online process with no hidden charges</p>
+            </div>
+            <div class="feature">
+              <img src="assets/icon-quality.png" alt="Quality Icon" />
+              <h3>Certified Quality</h3>
+              <p>Rigorous inspections by automotive experts</p>
+            </div>
+            <div class="feature">
+              <img src="assets/icon-price.png" alt="Price Icon" />
+              <h3>Affordable Prices</h3>
+              <p>Budget-friendly options from leading bike brands</p>
+            </div>
           </div>
-          <div class="image-item">
-            <img
-              src="https://picsum.photos/300/200?random=2"
-              alt="Random Image 2"
-            />
+        </section>
+
+        <section id="bikes" class="featured-bikes">
+          <h2>Featured Bikes</h2>
+          <div class="bike-grid">
+            <div class="bike-card">
+              <img src="assets/r15.jpg" alt="Yamaha YZF-R1" />
+              <h3>Yamaha R15 V2 Limited Edition</h3>
+              <p>2016 | 12,000 km | ₹70,000</p>
+              <a href="#" class="bike-details">View Details</a>
+            </div>
+            <div class="bike-card">
+              <img src="assets/rs.jpg" alt="Royal Enfield Classic 350" />
+              <h3>Bajaj Pulsor RS 200cc</h3>
+              <p>2022 | 8,500 km | ₹1,40,000</p>
+              <a href="#" class="bike-details">View Details</a>
+            </div>
+            <div class="bike-card">
+              <img src="assets/classic.jpg" alt="KTM Duke 390" />
+              <h3>Royal Enfield Classic 350 ABS</h3>
+              <p>2021 | 5,000 km | ₹2,20,000</p>
+              <a href="#" class="bike-details">View Details</a>
+            </div>
           </div>
-          <div class="image-item">
-            <img
-              src="https://picsum.photos/300/200?random=3"
-              alt="Random Image 3"
-            />
+        </section>
+
+        <section id="contact" class="contact">
+          <div class="container">
+            <h1>CONTACT US</h1>
+            <p>
+              LET'S CONNECT: WE'RE HERE TO HELP, AND WE'D LOVE TO HEAR FROM YOU!
+              WHETHER YOU HAVE A QUESTION, COMMENT, OR JUST WANT TO CHAT , YOU
+              CAN REACH OUT TO US THROUGH THE CONTACT FORM OF THIS PAGE, OR BY
+              PHONE, EMAIL, OR SOCIAL MEDIA.
+            </p>
+            <div class="hero">
+              <div class="hero-content">
+                <div class="contact-buttons">
+                  <div class="btn">
+                    <button>VIA SUPPORT CHAT</button>
+                    <button>VIA CALL</button>
+                  </div>
+                  <button class="email">VIA EMAIL FORM</button>
+                </div>
+                <div class="all-input">
+                  <fieldset>
+                    <legend>Name</legend>
+                    <input type="text" />
+                  </fieldset>
+                  <fieldset>
+                    <legend>E-mail</legend>
+                    <input type="email" />
+                  </fieldset>
+                  <fieldset class="text">
+                    <legend>TEXT</legend>
+                    <input type="text" />
+                  </fieldset>
+                </div>
+              </div>
+              <div class="hero-image">
+                <img
+                  src="assets/Service 24_7-pana 1.svg"
+                  alt="Customer Service"
+                />
+              </div>
+            </div>
           </div>
-          <div class="image-item">
-            <img
-              src="https://picsum.photos/300/200?random=4"
-              alt="Random Image 4"
-            />
-          </div>
-          <div class="image-item">
-            <img
-              src="https://picsum.photos/300/200?random=5"
-              alt="Random Image 5"
-            />
-          </div>
-          <div class="image-item">
-            <img
-              src="https://picsum.photos/300/200?random=6"
-              alt="Random Image 6"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
+      </main>
+    </div>
+    <footer class="footer">
+      <p>&copy; 2023 MR Bike Point. All rights reserved.</p>
+    </footer>
   </body>
 </html>
